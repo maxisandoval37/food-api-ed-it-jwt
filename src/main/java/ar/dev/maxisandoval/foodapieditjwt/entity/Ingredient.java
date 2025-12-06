@@ -1,5 +1,6 @@
 package ar.dev.maxisandoval.foodapieditjwt.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -21,6 +22,6 @@ public class Ingredient {
 
     @ManyToOne
     @JoinColumn(name = "food_id")
-    //TODO Agregar jsonignore
+    @JsonIgnore
     private Food food;
 }
