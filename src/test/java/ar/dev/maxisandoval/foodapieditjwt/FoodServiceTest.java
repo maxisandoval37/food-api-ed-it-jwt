@@ -1,14 +1,12 @@
 package ar.dev.maxisandoval.foodapieditjwt;
 
-import ar.dev.maxisandoval.foodapieditjwt.entity.Food;
-import ar.dev.maxisandoval.foodapieditjwt.entity.Ingredient;
+import ar.dev.maxisandoval.foodapieditjwt.entity.*;
 import ar.dev.maxisandoval.foodapieditjwt.service.FoodService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.datafaker.Faker;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;

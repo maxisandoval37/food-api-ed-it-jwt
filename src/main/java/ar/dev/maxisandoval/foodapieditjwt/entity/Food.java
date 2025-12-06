@@ -1,6 +1,7 @@
 package ar.dev.maxisandoval.foodapieditjwt.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import lombok.*;
 import java.util.List;
 
@@ -15,8 +16,12 @@ public class Food {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "El nombre es obligatorio")
+    @Size(min = 2, max = 50, message = "El nombre debe tener entre 2 y 50 caracteres")
     private String name;
 
+    @NotNull
+    @Min(value = 0, message = "Las calorias no pueden ser negativas")
     private Integer calories;
 
     @OneToMany(mappedBy = "food", cascade = CascadeType.ALL, orphanRemoval = true)
