@@ -2,11 +2,11 @@ package ar.dev.maxisandoval.foodapieditjwt.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.util.List;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Food {
