@@ -16,12 +16,12 @@ public class JwtService {
     private String secret;
 
     @Value("${jwt.expiration}")
-    private String expiration;
+    private Integer expiration;
 
     public String generateToken(UserDetails user) {
         return Jwts.builder()
                 .subject(user.getUsername())
-                .issuedAt(new Date())
+                .issuedAt(new Date(System.currentTimeMillis()))
                 .expiration(new Date(System.currentTimeMillis() + expiration))
                 .signWith(getSingInKey(), Jwts.SIG.HS256)
                 .compact();

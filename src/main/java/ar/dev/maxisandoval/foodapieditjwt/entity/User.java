@@ -31,9 +31,8 @@ public class User implements UserDetails {
     @Size(min = 3, max = 20, message = "El nombre de usuario debe tener entre 3 y 20 caracteres")
     private String username;
 
-    @Column(nullable = false)
     @NotBlank(message = "La contrase\\u00F1a es obligatoria")
-    @Size(min = 6, max = 20, message = "La contraseña debe tener entre 6 y 20 caracteres")
+    @Size(min = 6, max = 200, message = "La contraseña debe tener entre 6 y 20 caracteres")
     private String password;
 
     @Enumerated(EnumType.STRING)

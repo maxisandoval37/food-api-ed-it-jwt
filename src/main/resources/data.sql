@@ -23,3 +23,7 @@ INSERT INTO ingredient (name, food_id) VALUES ('Fideos', 4);
 INSERT INTO ingredient (name, food_id) VALUES ('Salsa', 4);
 
 INSERT INTO ingredient (name, food_id) VALUES ('Milanesa', 5);
+
+-- password: password
+INSERT INTO app_user (username, password, role) VALUES ('user1', '$2a$12$VIgsm77yjZNqLbpRo0aQjuWKNMKuCqF.5HkvNZd9LCUMMLnduCGgm', 'USER');
+INSERT INTO app_user (username, password, role) VALUES ('admin', '$2a$12$VIgsm77yjZNqLbpRo0aQjuWKNMKuCqF.5HkvNZd9LCUMMLnduCGgm', 'ADMIN');
