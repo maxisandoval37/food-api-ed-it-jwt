@@ -1,6 +1,6 @@
 package ar.dev.maxisandoval.foodapieditjwt.config;
 
-import ar.dev.maxisandoval.foodapieditjwt.Security.JwtAuthenticationFilter;
+import ar.dev.maxisandoval.foodapieditjwt.security.JwtAuthenticationFilter;
 import ar.dev.maxisandoval.foodapieditjwt.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;

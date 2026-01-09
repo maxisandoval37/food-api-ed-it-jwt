@@ -1,4 +1,4 @@
-package ar.dev.maxisandoval.foodapieditjwt.Security;
+package ar.dev.maxisandoval.foodapieditjwt.security;
 
 import ar.dev.maxisandoval.foodapieditjwt.service.JwtService;
 import jakarta.servlet.FilterChain;
