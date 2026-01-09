@@ -42,7 +42,7 @@ El endpoint de swagger se encuentra en:
 
 ## Live Demo
 
-### [Click Here! 🖱️](https://food-api-ed-it-jwt.onrender.com/)
+### [Click Here! 🖱️](https://food-api-ed-it-jwt.onrender.com/swagger-ui/index.html)
 
 #### Usuarios de prueba (pass: *password*):
 - admin
